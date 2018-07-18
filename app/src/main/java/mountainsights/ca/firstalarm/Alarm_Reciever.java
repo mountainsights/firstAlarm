@@ -10,9 +10,10 @@ import android.widget.Toast;
 
 public class Alarm_Reciever extends BroadcastReceiver {
 
-//try now
+
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, "FuckJava.exe", Toast.LENGTH_LONG).show();
+        Log.e("Alarm_Recieve","Alarm reciever works!");
+        Toast.makeText(context, "Alarm reciever connected", Toast.LENGTH_LONG).show();
     }
 }

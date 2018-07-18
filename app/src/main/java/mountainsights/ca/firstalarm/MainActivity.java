@@ -47,9 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //Create an intent to the Alarm reciever class.
+        //Create an intent to the Alarm reciever class. Nothing shows in error log
         Intent my_Intent = new Intent(MainActivity.this, Alarm_Reciever.class);
         sendBroadcast(my_Intent);//test 51 try this.
+        Log.e("Main","Main works");
 
        // final Intent my_intent = new Intent(this.context, Alarm_Reciever.class);
 
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         //initialize buttons+onclicklistener
         Button alarm_on = (Button) findViewById(R.id.Start_Alarm);
 
-        Log.e("Main","test123");
+
 
 
 
